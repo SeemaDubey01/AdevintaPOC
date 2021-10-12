@@ -1,4 +1,4 @@
-package com.adevinta.poc;
+/*package com.adevinta.poc;
 
 import static org.junit.Assert.assertEquals;
 
@@ -57,7 +57,7 @@ public class AdevintaPocServiceTests {
 	 
 
 		 
-	 }
+	 }*/
 	 
 
 
