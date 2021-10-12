@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Home - Adevinta POC</title>
+</head>
+<body>
+<header>
+    <a href="home"><img src="img/Adevinta-logo.svg" width="200px"></a>
+    <h1>POC - Credit Limit Tracking</h1>
+    <h2>Search Data by Customer's Name</h2>
+</header>
+<div class="searchdata">
+	<form method="Get" action="searchdata">
+    	<input type="text" placeholder="Name" name="cname"> 
+    	<button type="submit" class="sbutton">Search</button>
+    </form>
+</div>
+<div th:if="${message}" class="msg">
+    <span th:text="${message}"/></span>
+</div>
+<div class="showall">
+    <table class="result">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Credit Limit</th>
+            <th>Phone</th>
+            <th>Post code</th>
+        </tr></thead><tbody>
+        <tr th:each="customer : ${customers}">
+        	<td th:text="${customer.name}">Name</td>
+        	<td th:text="${customer.address}">Address</td>
+        	<td th:text="${customer.creditLimit}">CrLimit</td>
+        	<td th:text="${customer.phoneNu}">Phone</td>
+        	<td th:text="${customer.postcode}">Postal Code</td>
+      	</tr>
+    </tbody>
+    </table>
+</div>
+<div class="container">
+    <a href="home"><div class="home-button">Home</div></a>
+    <a href="uploaddata"><div class="home-button">Upload Data</div></a>
+    <a href="showall"><div class="home-button">Show All</div></a>
+</div>
+</body>
+</html>

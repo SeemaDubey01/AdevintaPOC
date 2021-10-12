@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Home - Adevinta POC</title>
+</head>
+<body>
+<header>
+    <a href="home"><img src="img/Adevinta-logo.svg" width="200px"></a>
+    <h1>POC - Credit Limit Tracking</h1>
+    <h2>Upload Data</h2>
+</header>
+<div class="uploaddiv">
+	<form method="POST" action="/uploaddata" enctype="multipart/form-data">
+    	<input type="file" name="file">
+    	<button type="submit" class="sbutton">Upload</button>
+    </form>
+</div>
+<div th:if="${message}" class="msg">
+    <span th:text="${message}"/></span>
+</div>
+<div class="container">
+    <a href="home"><div class="home-button">Home</div></a>
+    <a href="searchdata"><div class="home-button">Search Data</div></a>
+    <a href="showall"><div class="home-button">Show All</div></a>
+</div>
+</body>
+</html>

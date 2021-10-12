@@ -1,0 +1,88 @@
+.home-button {
+    width: 180px;
+    margin: 5px;
+    min-height: 50px;
+    line-height: 50px;
+    float: left;
+    text-align: center;
+    border: 5px;
+    border-style: outset;
+    border-radius: 10px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(68, 81, 255, 0.897);
+}
+.container {
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 50px;
+    overflow: hidden;
+    #border: 1px black solid;
+}
+.uploaddiv{
+   margin-left: 50px;
+}
+.uploaddiv  input[type="file"]{
+    width: 500px;
+}
+.uploaddiv  input[type="file"]::file-selector-button {
+    font-size: 15px;
+    border: 4px; border-radius: 8px; border-style: outset; 
+    cursor: pointer;
+}
+.sbutton {
+    font-size: 20px;
+    color: white;
+    background-color: rgba(68, 81, 255, 0.897);
+    border: 4px; border-radius: 8px; border-style: outset; 
+    cursor: pointer;
+}
+.showall {margin-left: 50px;overflow-y: auto; height: 300px; width: 800px;}
+.result {
+    border-collapse: collapse;
+    width: 800px;
+}
+.msg {
+    margin-left: 50px;
+    color: red;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+.error {
+    margin-left: 50px;
+    color: red;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+.result tbody {
+    width: 100%;
+}
+.result td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.result   th {
+    font-size: 18px;
+    color: white;
+    background-color: rgba(68, 81, 255, 0.897);
+}
+.result thead th {
+    position: sticky;
+    top: 0;
+  }
+  .searchdata {
+      margin-left: 50px;
+      margin-bottom: 10px;
+  }
+  .searchdata input{
+    font-size: 14px;
+    padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
