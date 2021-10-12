@@ -1,4 +1,4 @@
-package com.adevinta.poc;
+/*package com.adevinta.poc;
 
 
 import static org.mockito.Mockito.when;
@@ -95,4 +95,4 @@ public class AdevintaPocControllerTests {
 		   .andExpect(view().name("searchdata"));
 	  }
 	 
-	}
+	}*/
